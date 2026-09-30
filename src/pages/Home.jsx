@@ -25,7 +25,10 @@ export default function Home(){
       <a className="insta-link" href="https://www.instagram.com/sarvakalyana_seva_kalaburgi" target="_blank" rel="noreferrer">◎ Follow our journey on Instagram ↗</a>
     </div>
     <div className="hero-poster">
-      <img src="/assets/feeding-hope.png" alt="Sarva Kalyana Seva feeding hope poster"/>
+      <img
+  src={`${import.meta.env.BASE_URL}assets/feeding-hope.png`}
+  alt="Sarva Kalyana Seva feeding hope poster"
+/>
       <div className="hero-badge"><strong>Every small effort counts.</strong><span>Every helping hand matters.</span></div>
     </div>
    </div>
@@ -51,7 +54,11 @@ export default function Home(){
   </div></section>
 
   <section className="section"><div className="container two-col">
-   <div className="poster-card"><img src="/assets/about-poster.png" alt="Sarvakalyana Seva mission poster"/></div>
+   <div className="poster-card">
+  <img
+    src={`${import.meta.env.BASE_URL}assets/about-poster.png`}
+    alt="Sarvakalyana Seva mission poster"
+  /></div>
    <div className="story-copy"><p className="eyebrow">The spirit behind SKS</p><h2>“Together, we can make a difference.”</h2>
    <p>Our aim is not to simply give. It is to listen, understand a need, bring people together and respond with care.</p>
    <ul className="check-list"><li>Education & school outreach</li><li>Food seva and nourishment</li><li>Health & social welfare initiatives</li><li>Volunteer and community participation</li></ul>

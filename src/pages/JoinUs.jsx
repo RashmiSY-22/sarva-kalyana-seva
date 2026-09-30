@@ -33,6 +33,9 @@ export default function JoinUs(){
    <label className="checkbox"><input type="checkbox" checked={state.agree} onChange={e=>field("agree",e.target.checked)}/><span>I would like to be contacted regarding Sarva Kalyana Seva activities.</span></label>{errors.agree&&<small className="field-error">{errors.agree}</small>}
    <button className="btn primary" type="submit">Submit my interest →</button>{submitted&&<div className="success">Thank you. Your interest has been recorded for this demo form. We’ll connect with you through the details provided.</div>}
   </form>
-  <aside className="join-aside"><img src="/assets/feeding-hope.png" alt="Feeding Hope poster"/><div className="contact-strip"><strong>Prefer to connect directly?</strong><a href="tel:8088307288">☎ 8088307288</a><a href="mailto:sarvakalyana.seva@gmail.com">✉ sarvakalyana.seva@gmail.com</a></div><a className="btn secondary full" href="https://www.instagram.com/sarvakalyana_seva_kalaburgi" target="_blank" rel="noreferrer">Connect on Instagram ↗</a></aside>
+  <aside className="join-aside"><img
+  src={`${import.meta.env.BASE_URL}assets/feeding-hope.png`}
+  alt="Feeding Hope poster"
+/><div className="contact-strip"><strong>Prefer to connect directly?</strong><a href="tel:8088307288">☎ 8088307288</a><a href="mailto:sarvakalyana.seva@gmail.com">✉ sarvakalyana.seva@gmail.com</a></div><a className="btn secondary full" href="https://www.instagram.com/sarvakalyana_seva_kalaburgi" target="_blank" rel="noreferrer">Connect on Instagram ↗</a></aside>
  </div></section></div>
 }

@@ -1,6 +1,6 @@
 const photos=[
- ["/assets/feeding-hope.png","Feeding Hope · Sharing Humanity","Food contribution & community support"],
- ["/assets/about-poster.png","Our mission","Education · Health · Social Welfare"],
- ["/assets/kalaprerna.png","Kalaprerna","Republic-themed inter-school art initiative"]
+[`${import.meta.env.BASE_URL}assets/feeding-hope.png`, "Feeding Hope · Sharing Humanity", "Food contribution & community support"],
+ [`${import.meta.env.BASE_URL}assets/about-poster.png`, "Our mission", "Education · Health · Social Welfare"],
+[`${import.meta.env.BASE_URL}assets/kalaprerna.png`, "Kalaprerna", "Republic-themed inter-school art initiative"],
 ];
 export default function Gallery(){return <div className="page"><section className="page-hero"><div className="container"><p className="eyebrow">Gallery</p><h1>Real moments. <em>Real purpose.</em></h1><p>These posters and program moments reflect the spirit behind Sarva Kalyana Seva.</p></div></section><div className="container gallery-grid">{photos.map(([src,title,desc])=><figure key={title}><img src={src} alt={title}/><figcaption><strong>{title}</strong><span>{desc}</span></figcaption></figure>)}</div><section className="section"><div className="container gallery-note"><div><p className="eyebrow">Stay connected</p><h2>More moments are shared on Instagram.</h2><p>Follow the page for updates, activities and community stories.</p></div><a className="btn primary" href="https://www.instagram.com/sarvakalyana_seva_kalaburgi" target="_blank" rel="noreferrer">Visit Instagram ↗</a></div></section></div>}
