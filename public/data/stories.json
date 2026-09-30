@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "School outreach",
+    "text": "Programs have been conducted across 10\u201315 schools, creating spaces for learning, creativity, awareness and encouragement.",
+    "tag": "Education"
+  },
+  {
+    "id": 2,
+    "title": "Food support",
+    "text": "Food is shared with people in need around temples and community spaces, turning contributions into a helping hand.",
+    "tag": "Annadana"
+  },
+  {
+    "id": 3,
+    "title": "Kalaprerna",
+    "text": "A Republic-themed inter-school art initiative that encouraged young artists to express their vision of India.",
+    "tag": "Youth"
+  }
+]
