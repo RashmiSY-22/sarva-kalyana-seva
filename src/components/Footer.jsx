@@ -6,7 +6,10 @@ export default function Footer() {
       <div className="container footer-grid">
         <div>
           <div className="footer-brand">
-            <img src="/assets/sks-logo.png" alt="SKS logo" />
+            <img
+  src={`${import.meta.env.BASE_URL}assets/sks-logo.png`}
+  alt="Sarva Kalyana Seva logo"
+/>
             <div><strong>Sarva Kalyana Seva</strong><span>Serving with compassion</span></div>
           </div>
           <p>Feeding hope. Sharing humanity. Turning celebrations and contributions into meaningful support for people and communities.</p>

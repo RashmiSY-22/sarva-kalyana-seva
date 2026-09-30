@@ -14,7 +14,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="container nav-inner">
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
-          <img src="/assets/sks-logo.png" alt="Sarva Kalyana Seva logo" />
+        <img src={`${import.meta.env.BASE_URL}assets/sks-logo.png`} alt="Sarva Kalyana Seva logo" />
           <span><strong>Sarva Kalyana Seva</strong><small>From Celebration to Contribution</small></span>
         </Link>
         <button className="menu-toggle" onClick={() => setOpen(v => !v)} aria-label="Toggle navigation">☰</button>
