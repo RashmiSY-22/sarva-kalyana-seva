@@ -19,7 +19,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <ThemeProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/sarva-kalyana-seva">
           <ScrollTop />
           <Navbar />
           <main>
